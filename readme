@@ -1,0 +1,23 @@
+Assumptions :
+
+1) Customer can add multiple products in the cart.
+2) There can be different discount coupon availabe for some products or may be direct discount given to that product by seller
+3) Customer can use there own coupons to get discount on order such as coupon on order execeeding certain amount.
+4) Customer can choose different payment methods to place order. 
+   Example: Cash on delivery, Card 
+5) Customer choose multiple products and place order & then choose payment option as per his/her conveniance & then place order  
+6) Customers can give review or rating to the product based on their personal experience.
+
+Design Choices:
+
+1) Product belongs category such Clothing,electronic,food etc 
+2) These catgories has sub-categories then actual product.
+   Example : Levis T-shirt -> T-shirt -> Clothing
+3) Product has multiple features such as size, color, fabric, wash care, fit and discount for that product are maintained in Product_feature and applied to multiple product 
+4) These many to many relationship is maintained in schema
+5) More than one customer can belong to same address and also same customer has more than one address such as work place address, home address
+6) These relationship is also maintained in schema 
+7) But seller belongs to one address
+8) single product can be sold by multple sellers & seller can sell multiple product
+9) Customer can also get a chance to use coupons while ordering, but different order he can use same coupon & these discount coupons are different from product coupon  
+10) Relation maintained in Assumptions are also applied
